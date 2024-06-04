@@ -1,0 +1,10 @@
+def matcher(l, accum = 0):
+    case l:
+        match []:
+            return accum
+        match [head] +tail:
+            return matcher(tail, head+accum)
+
+
+        
+    

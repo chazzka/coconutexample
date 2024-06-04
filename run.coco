@@ -1,0 +1,4 @@
+from lib.matching import matcher
+
+matcher([1,2,3]) |> print
+[2,2,3] |> reduce$(+) |> print

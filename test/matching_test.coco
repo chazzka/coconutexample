@@ -1,0 +1,16 @@
+import unittest
+from lib.matching import matcher
+
+class TestStringMethods(unittest.TestCase):
+
+    def test_isupper(self):
+        self.assertTrue('FOO'.isupper())
+        self.assertFalse('Foo'.isupper())
+
+    def test_matcher(self):
+        matcher([1,2,3]) |> self.assertEqual$(6)
+
+
+
+if __name__ == '__main__':
+    unittest.main()
